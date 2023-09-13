@@ -1,0 +1,83 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:url('https://i.ibb.co/JB1y0X5/4690.jpg'), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+.container{
+    padding: 40px 80px;
+}
+.home-container{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.card-container{
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.card{
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.photo{
+    width: 80px;
+    border-radius: 50px;
+    border: 3px solid white;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-btn{
+    background-color: rgb(255, 107, 2);
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.cart-container{
+    color: white;
+    text-align: center;
+    width: 400px;
+}
+
+@media screen and (max-width: 960px){
+    .home-container{
+        display: block;
+    }
+    .card-container{
+        width: 100%;
+    }
+    .cart-container{
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .container{
+        padding: 40px;
+    }
+    .home-container{
+        display: block;
+    }
+    .card-container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .cart-container{
+        width: 100%;
+        margin-top: 40px;
+    }
+}
